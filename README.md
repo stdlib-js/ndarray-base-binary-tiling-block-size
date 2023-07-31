@@ -154,11 +154,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
@@ -174,8 +169,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-base-binary-tiling-block-size.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-base-binary-tiling-block-size
 
-[test-image]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/actions/workflows/test.yml/badge.svg?branch=v0.0.1
-[test-url]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/actions/workflows/test.yml?query=branch:v0.0.1
+[test-image]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/actions/workflows/test.yml/badge.svg?branch=v0.0.2
+[test-url]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/actions/workflows/test.yml?query=branch:v0.0.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-base-binary-tiling-block-size/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-base-binary-tiling-block-size?branch=main
@@ -201,8 +196,6 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [umd-url]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/tree/umd
 [esm-url]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/tree/esm
 [branches-url]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-binary-tiling-block-size/main/LICENSE
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
