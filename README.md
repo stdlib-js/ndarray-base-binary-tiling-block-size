@@ -18,6 +18,17 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # binaryBlockSize
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
@@ -34,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-binary-tiling-block-size
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-binaryBlockSize = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var binaryBlockSize = require( 'path/to/vendor/umd/ndarray-base-binary-tiling-block-size/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.binaryBlockSize;
-})();
-</script>
+var binaryBlockSize = require( '@stdlib/ndarray-base-binary-tiling-block-size' );
 ```
 
 #### binaryBlockSize( dtypeX, dtypeY, dtypeZ )
@@ -101,16 +104,11 @@ var bsize = binaryBlockSize( 'float64', 'float64', 'float64' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-cartesian-square@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-promotion-rules@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var cartesianSquare = require( '@stdlib/array-base-cartesian-square' );
+var promotionRules = require( '@stdlib/ndarray-promotion-rules' );
+var binaryBlockSize = require( '@stdlib/ndarray-base-binary-tiling-block-size' );
 
 // Generate a list of input ndarray dtype pairs:
 var dt = cartesianSquare( dtypes() );
@@ -126,11 +124,6 @@ for ( i = 0; i < dt.length; i++ ) {
     b = binaryBlockSize.apply( null, dt[ i ] );
     console.log( '%d, %s, %s, %s', b, dt[i][0], dt[i][1], dt[i][2] );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -192,8 +185,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-base-binary-tiling-block-size.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-base-binary-tiling-block-size
 
-[test-image]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-base-binary-tiling-block-size/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-base-binary-tiling-block-size?branch=main
@@ -222,7 +215,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-binary-tiling-block-size/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/umd
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
 </section>
 
