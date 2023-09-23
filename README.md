@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import binaryBlockSize from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-binary-tiling-block-size/tags). For example,
+
+```javascript
 import binaryBlockSize from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@v0.1.0-esm/index.mjs';
 ```
 
@@ -97,7 +102,7 @@ var bsize = binaryBlockSize( 'float64', 'float64', 'float64' );
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
 import cartesianSquare from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-cartesian-square@esm/index.mjs';
 import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-promotion-rules@esm/index.mjs';
-import binaryBlockSize from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@v0.1.0-esm/index.mjs';
+import binaryBlockSize from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@esm/index.mjs';
 
 // Generate a list of input ndarray dtype pairs:
 var dt = cartesianSquare( dtypes() );
