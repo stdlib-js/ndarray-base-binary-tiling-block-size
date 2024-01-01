@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isPositiveInteger = require( '@stdlib/assert-is-positive-integer' ).isPrimitive;
 var pkg = require( './../package.json' ).name;
 var blockSize = require( './../lib' );
