@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import binaryBlockSize from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@deno/mod.js';
+import binaryBlockSize from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@v0.2.0-deno/mod.js';
 ```
 
 #### binaryBlockSize( dtypeX, dtypeY, dtypeZ )
@@ -92,7 +92,7 @@ var bsize = binaryBlockSize( 'float64', 'float64', 'float64' );
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
 import cartesianSquare from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-cartesian-square@deno/mod.js';
 import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-promotion-rules@deno/mod.js';
-import binaryBlockSize from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@deno/mod.js';
+import binaryBlockSize from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-binary-tiling-block-size@v0.2.0-deno/mod.js';
 
 // Generate a list of input ndarray dtype pairs:
 var dt = cartesianSquare( dtypes() );
