@@ -1,0 +1,4 @@
+// Copyright (c) 2026 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./mod.d.ts" />
+var n={binary:1,bool:1,complex64:8,complex128:16,float16:2,bfloat16:2,float32:4,float64:8,float128:16,generic:null,int8:1,int16:2,int32:4,int64:8,int128:16,int256:32,uint8:1,uint8c:1,uint16:2,uint32:4,uint64:8,uint128:16,uint256:32};function t(t){return n[t]||null}var i={BLOCK_SIZE_IN_BYTES:64,BLOCK_SIZE_IN_ELEMENTS:8};function u(n,u,E){return function(n){var u,E,r,l;if((E=n.length)<=0)return i.BLOCK_SIZE_IN_ELEMENTS;if(null===(u=t(n[0])))return i.BLOCK_SIZE_IN_ELEMENTS;for(l=1;l<E;l++){if(null===(r=t(n[l])))return i.BLOCK_SIZE_IN_ELEMENTS;r>u&&(u=r)}return(r=i.BLOCK_SIZE_IN_BYTES/u|0)>0?r:1}([n,u,E])}export{u as default};
+//# sourceMappingURL=mod.js.map
